@@ -1,0 +1,106 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<form>
+			<table border="1" cellspacing="0" cellpadding="5px">
+				<colgroup>
+					<col style="width: 120px;">
+					<col style="width: 400px;" >
+				</colgroup>
+				<tr>
+					<td>
+						<label for="name">Full Name*</label>
+					</td>
+					<td>
+						<input type="text" id="name" style="width:375px" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email">Email*</label>
+					</td>
+					<td>
+						<input type="text" id="email" style="width:375px" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Password">Password*</label>
+					</td>
+					<td>
+						<input type="password" id="Password" placeholder="Enter your password" style="width:375px" required>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Password-repeat">Confirm Password*</td>
+						<td><input type="password" id="Password-repeat" placeholder="Enter your password again" style="width:375px" required></td>
+					</tr>
+					<tr>
+						<td><label for="phone">Phone number*</td>
+							<td><input type="text" id="phone" style="width:375px" required></td>
+						</tr>
+						<tr>
+							<td><label for="address">Address</td>
+								<td><textarea id="address" rows="3" style="width:375px"></textarea></td>
+							</tr>
+							<tr>
+								<td><label for="city">City</td>
+									<td style="box-sizing: border-box;">
+										<input type="text" id="city" placeholder="Enter your city" style="width:200px">
+										<a><label for="state">State</a>
+											<input type="text" id="state" placeholder="Enter your state" style="width:120px">
+										</td>
+									</tr>
+									<tr>
+										<td><label for="zip">Zip/Postal Code</td>
+											<td><input type="text" id="zip" placeholder="Enter your Zip/Postal Code" style="width:375px"></td>
+										</tr>
+										<tr>
+											<td><label for="country">Country</td>
+												<td>
+													<select id="country">
+														<option selected="selected">[Select your country]</option>
+														<option>Vietnam</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td><label for="birth">Birthday</td>
+													<td><input type="date" id="birth"style="width:30%"></td>
+												</tr>
+												<tr>
+													<td><label for="gender">Gender</td>
+														<td>
+															<select id="gender">
+																<option selected="selected">Male</option>
+																<option>Female</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td><label for="season">Starting date</label></td>
+														<td>
+															<input type="radio" name="season" id="spring" value="Spring" />
+															<label for="spring">Spring</label>
+															<input type="radio" name="season" id="summer" value="Summer" />
+															<label for="summer">Summer</label>
+														</td>
+													</tr>
+													<tr>
+														<td><label for="comments">Comments</td>
+															<td><textarea id="comments" rows="3" style="width:375px" placeholder="Please send us more information"></textarea></td>
+														</tr>
+														<tr>
+															<td colspan="2" style=" text-align: center;">
+																<button type="submit">Submit</button>
+															</td>
+														</tr>
+													</table>
+												</form>
+											</body>
+											</html>
