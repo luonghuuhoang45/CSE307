@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		form {
+			border: 1px solid black;
+			
+		}
+
+		fieldset{
+			margin-bottom: 10px;
+		}
+
+		select{
+			margin-left: 10px;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.address {
+			position: absolute;
+			top: 50%;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		input.credentials {
+			position: absolute;
+			left: 150px;
+			width: 12%;
+		}
+
+		.footer-button{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<form method="post" action="#" name="dangky" style="width:25%;">
+		<h2 style="text-align:center;"><b>MEMBER REGISTRATION</b></h1>
+			<fieldset>
+
+				<legend style="text-align: left;"><b>Personal information</b></legend>
+
+				<label for="name-field">Full name: </label>
+				<input type="text" name="full name" id="name-field" size="45">
+
+				<br>
+				Birthday: 
+				<select name="day">
+					<option value="01">01</option>
+					<option value="02">02</option>
+				</select>
+
+				Month:
+				<select name="month">
+					<option value="01">01</option>
+					<option value="02">02</option>
+				</select>
+
+				Year:
+				<input type="text" name="yob" size="19">
+
+				<br>
+				Gender:
+				<label for="nam" style="margin-left: 18px;">Nam</label>
+				<input type="radio" id="nam" name="gender" value="Nam">
+				<label for="nu">Nu</label>
+				<input type="radio" id="nu" name="gender" value="Nu">
+
+				<br>
+				<div class="container">
+					<label for="address-field" class="address">Address: </label>
+					<textarea id="address-field" style="margin-left:74px; width: 78%;"></textarea>
+				</div>
+
+				<br>
+				<label for="phone">Telephone: </label>
+				<input type="text" name="phone" id="phone">
+
+				<br>
+				<label for="mail">Email: </label>
+				<input type="text" name="mail" id="mail" style="margin-left:28px">
+
+
+			</fieldset>
+
+			<fieldset>
+				<legend><b>Credentials</b></legend>
+
+				<label for="username">Username: </label>
+				<input class="credentials" type="text" id="username" name="username">
+
+				<br>
+				<label for="password">Password: </label>
+				<input class="credentials" type="password" name="password" id="password">
+
+				<br>
+				<label for="confirm-password">Confirm password: </label>
+				<input class="credentials" type="password" name="confirm-password" id="confirm-password">
+				
+			</fieldset>
+
+			<div class="footer-button">
+				<button type="submit">Login</button>
+				<button type="reset">Cancel</button>
+			</div>
+
+
+		</form>
+		
+
+	</body>
+	</html>
