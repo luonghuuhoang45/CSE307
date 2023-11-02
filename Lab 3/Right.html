@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+
+
+		.book {
+			animation: autoscroll 10s linear infinite;
+		}
+
+		.book:hover{
+			animation-play-state: paused;
+		}
+
+		@keyframes autoscroll {
+			from { 
+				transform: translate3d(0,0,0);
+			}
+			to {
+				transform: translate3d(0,-90%,0);
+			}
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	
+
+
+	<div class="book">
+		<h2><b>BEST SELLER</b></h1>
+		<p><a href="#"><img src="img/EnglishForTech.jpg" width="10%">English For Tech</a></p>
+		<p><a href="#"><img src="img/Davinci.png" width="10%">DaVinci</a></p>
+		<p><a href="#"><img src="img/BARC.png" width="10%">BARC</a></p>
+		<p><a href="#"><img src="img/VisualBasic.png" width="10%">VisualBasic</a></p>
+
+	</div>
+
+	<h2><b>THE WEBSITE LINKS</b></h1>
+	<select name="links" onchange="location = this.value;">
+		<option value="default">--- Select the linking page---</option>
+		<option value="https://eiu.edu.vn/">Eastern International University</option>
+		<option value="https://lib.eiu.edu.vn/">Eastern International University Library</option>
+	</select>
+
+	<br>
+
+	<h2><b>ACCESS STATISTICS</b></h2>
+	
+	<h3><b>Total Access: 500</b></h3>
+	
+	<h3><b>Online: 3</b></h3>
+	
+
+
+
+</body>
+</html>
