@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var arr = [
+        {
+            id: '1',
+            name: 'Laptop',
+            quantity: '5',
+            price: 1200,
+            image: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg'   
+        },
+        {
+            id: '3',
+            name: 'Tablet',
+            quantity: '15',
+            price: 500,
+            image: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg'   
+        },
+        {
+            id: '2',
+            name: 'Phone',
+            quantity: '10',
+            price: 800,
+            image: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg'   
+        }
+        ];
+
+        function compare(a,b)
+        {
+            if(b.name>a.name) return -1;
+            if(b.name<a.name) return 1;
+            return 0;
+        }
+
+        function sortProduct(){
+            arr.sort(compare)
+            Show();
+
+            console.log('Sorted products: ')
+            arr.forEach(product =>{
+                console.log('ID:', product.id, ',Name:', product.name,', Quantity:', product.quantity, ',Price:', product.price, ',Image:', product.image, '\n');
+            }
+            )
+        }
+
+        function Show() {
+            var str = '';
+            document.body.innerHTML = "";
+            document.writeln("<div id='result'>    </div>");
+            for(i = 0;i<arr.length;i++)
+            {
+                str += `<div >${arr[i].id} </div> 
+                <div> ${arr[i].name} </div>
+                <div> ${arr[i].quantity} </div>
+                <div>${arr[i].price} VND</div>
+                <img width='100px' 
+                src='${arr[i].image}' /> 
+                `
+            }
+            str+='<button id="btnSort" onclick="sortProduct()">Sort by name</button>';
+            str+='<button id="btnAdd" onclick="addNewProduct()">Add new product</button>';
+            str+='<button id="btnClear" onclick="clearConsole()">Clear console</button>';
+            str+='<input type="text" id="searchTF" placeholder="Search product">';
+            str+='<button type="submit" id="btnSearch" onclick="searchProduct()">Search</button>';
+            document.getElementById("result").innerHTML += str;
+            console.log('Initial products: ')
+            arr.forEach(product =>{
+                console.log('ID:', product.id, ',Name:', product.name,', Quantity:', product.quantity, ',Price:', product.price, ',Image:', product.image, '\n');
+            }
+            )
+
+        }
+
+        function addNewProduct(){
+            var newProductFirst = {
+                id: '4',
+                name: 'Ipad',
+                quantity: '20',
+                price: 1500,
+                image: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg'
+            }
+            var newProductLast = {
+                id: '5',
+                name: 'Ipod',
+                quantity: '20',
+                price: 1200,
+                image: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg'
+            }
+            
+            arr.splice(0,0,newProductFirst);
+            arr.splice(arr.length, 0, newProductLast);
+
+            Show();
+            console.log('Updated products: ');
+            arr.forEach(product =>{
+                console.log('ID:', product.id, ',Name:', product.name,', Quantity:', product.quantity, ',Price:', product.price, ',Image:', product.image, '\n');
+            }
+            )
+        }
+
+        function clearConsole(){
+            console.clear();
+        }
+
+
+        function searchProduct(){
+            clearConsole();
+            var input = document.getElementById('searchTF').value,
+            result = arr.find(item => {
+             return item.name == input;
+         })
+            console.log(result ? showResult(result) : "wasn't found");
+        }
+
+        function showResult(res){
+            console.log('ID:', res.id, ',Name:', res.name,', Quantity:', res.quantity, ',Price:', res.price, ',Image:', res.image, '\n')
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <button id="btnShow" onclick="Show()">Show products list</button>
+
+    
+    
+
+
+
+
+</body>
+
+</html>

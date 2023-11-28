@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+
+</head>
+<body>
+
+	<table>
+		<thead style="font-weight: bold;">
+			<td>str</td>
+			<td>parseInt(str)</td>
+			<td>parseFloat(str)</td>
+			<td>Number(str)</td>
+			<td>+str</td>
+			<td>str|0</td>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="str1">1234</td>
+				<td id="int1">?</td>
+				<td id="float1">?</td>
+				<td id="num1">?</td>
+				<td id="+str1">?</td>
+				<td id="|01">?</td>
+			</tr>
+			<tr>
+				<td id="str2">1234abc</td>
+				<td id="int2">?</td>
+				<td id="float2">?</td>
+				<td id="num2">?</td>
+				<td id="+str2">?</td>
+				<td id="|02">?</td>
+			</tr>
+			<tr>
+				<td id="str3">0.15</td>
+				<td id="int3">?</td>
+				<td id="float3">?</td>
+				<td id="num3">?</td>
+				<td id="+str3">?</td>
+				<td id="|03">?</td>
+			</tr>
+			<tr>
+				<td id="str4">3.14ivan</td>
+				<td id="int4">?</td>
+				<td id="float4">?</td>
+				<td id="num4">?</td>
+				<td id="+str4">?</td>
+				<td id="|04">?</td>
+			</tr>
+			<tr>
+				<td id="str5">Infinity</td>
+				<td id="int5">?</td>
+				<td id="float5">?</td>
+				<td id="num5">?</td>
+				<td id="+str5">?</td>
+				<td id="|05">?</td>
+			</tr>
+			<tr>
+				<td id="str6">9999999999</td>
+				<td id="int6">?</td>
+				<td id="float6">?</td>
+				<td id="num6">?</td>
+				<td id="+str6">?</td>
+				<td id="|06">?</td>
+			</tr>
+			
+		</tbody>
+	</table>
+
+
+
+
+	<script type="text/javascript">
+
+
+
+		function fillTable() {
+
+			var val1 = document.getElementById("str1").innerText;
+			document.getElementById("int1").innerHTML = parseInt(val1);
+			document.getElementById("float1").innerHTML = parseFloat(val1);
+			document.getElementById("num1").innerHTML = Number(val1);
+			document.getElementById("+str1").innerHTML = String(val1);
+			document.getElementById("|01").innerHTML = val1|0;
+
+
+			var val2 = document.getElementById("str2").innerText;
+			document.getElementById("int2").innerHTML = parseInt(val2);
+			document.getElementById("float2").innerHTML = parseFloat(val2);
+			document.getElementById("num2").innerHTML = Number(val2);
+			document.getElementById("+str2").innerHTML = String(val2);
+			document.getElementById("|02").innerHTML = val2|0;
+			
+			
+			var val3 = document.getElementById("str3").innerText;
+			document.getElementById("int3").innerHTML = parseInt(val3);
+			document.getElementById("float3").innerHTML = parseFloat(val3);
+			document.getElementById("num3").innerHTML = Number(val3);
+			document.getElementById("+str3").innerHTML = String(val3);
+			document.getElementById("|03").innerHTML = val3|0;
+			
+			
+			var val4 = document.getElementById("str4").innerText;
+			document.getElementById("int4").innerHTML = parseInt(val4);
+			document.getElementById("float4").innerHTML = parseFloat(val4);
+			document.getElementById("num4").innerHTML = Number(val4);
+			document.getElementById("+str4").innerHTML = String(val4);
+			document.getElementById("|04").innerHTML = val4|0;
+			
+			
+			var val5 = document.getElementById("str5").innerText;
+			document.getElementById("int5").innerHTML = parseInt(val5);
+			document.getElementById("float5").innerHTML = parseFloat(val5);
+			document.getElementById("num5").innerHTML = Number(val5);
+			document.getElementById("+str5").innerHTML = String(val5);
+			document.getElementById("|05").innerHTML = val5|0;
+			
+			
+			var val6 = document.getElementById("str6").innerText;
+			document.getElementById("int6").innerHTML = parseInt(val6);
+			document.getElementById("float6").innerHTML = parseFloat(val6);
+			document.getElementById("num6").innerHTML = Number(val6);
+			document.getElementById("+str6").innerHTML = String(val6);
+			document.getElementById("|06").innerHTML = val6|0;
+			
+			
+
+		}
+
+		
+
+	</script>
+
+	<button id="btnFill" onclick="fillTable()">Fill the table</button>
+
+</body>
+</html>
