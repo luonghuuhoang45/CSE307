@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		function change() {
+			var pExample = document.querySelector(".example");
+			pExample.setAttribute("style", "background-color: aqua; width: 15%");
+
+			var aAttribute = document.querySelector('a[target]');
+			aAttribute.setAttribute("style", "border-style: solid; border-color: red;  width: 20%");
+
+			var divChild = document.querySelector("div").firstElementChild;
+			divChild.setAttribute("style", "font-size: 32px; color: green");
+
+		}
+	</script>
+
+	<p class="example">First paragraph with class "example".</p>
+	<p>This is another paragraph</p>
+	<a href="#" target="">Link with target attribute</a>
+	<div>
+		<p>A paragraph with div parent</p>
+	</div>
+
+	<button onclick="change()">Change</button>
+	
+
+
+</body>
+</html>

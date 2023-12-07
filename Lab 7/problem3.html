@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		function change() {
+
+			var pExample = document.querySelectorAll(".example");
+			pExample[0].setAttribute("style", "margin: 15px; padding: 15px; border-style: solid; border-color: green; width: 15%; background-color: yellow;");
+			for (var i = 1; i < pExample.length; i++) {
+				pExample[i].setAttribute("style", "margin: 15px; padding: 15px; border-style: solid; border-color: green; width: 15%; background-color: cyan");
+			};
+
+			var aAttribute = document.querySelectorAll('a[target]');
+			for (var i = 0; i < aAttribute.length; i++){
+				aAttribute[i].setAttribute("style", "border-style: solid; border-color: red; text-decoration: none");
+			};
+
+			var h1Element = document.querySelectorAll('h1[class="title"]');			
+			var h2Element = document.querySelectorAll('h2[class="title"]');			
+			for (var i = 0; i < h1Element.length; i++){
+				h1Element[i].setAttribute("style", "color: Orange");
+			}
+			for (var i = 0; i < h2Element.length; i++){
+				h2Element[i].setAttribute("style", "color: Orange");
+			}
+
+		}
+	</script>
+
+	<p class="example">First paragraph with class "example".</p>
+	<p class="example">Another paragraph with class "example".</p>
+	<p>This is a regular paragraph</p>
+	<a target="" href="#">Link with target attribute</a>
+	<br>
+	<a target="" href="#">Another link with target attribute</a>
+	<h1 class="title">Title 1</h1>
+	<h2 class="title">Title 2</h2>
+
+	<button onclick="change()">Change</button>
+
+
+
+</body>
+</html>
