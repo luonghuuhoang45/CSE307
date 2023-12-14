@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+	<title>KHÁCH SẠN MONA LUX</title>
+
+	<style type="text/css">
+
+
+
+		body {
+			font-family: "Roboto", sans-serif;
+		}
+
+		h1 {
+			font-style: italic;
+			font-weight: bold;
+			font-family: 'Cormorant Garamond', serif;
+		}
+		h5 {
+			font-weight: bold;
+			font-family: 'Cormorant Garamond', serif;
+		}
+
+
+		.row {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+		}
+
+
+		.p-intro {
+			text-align: left;
+		}
+
+
+
+		.a-intro {
+			font-size: 3vh;
+			font-style: italic;
+			color: #C68E17;
+			font-family: 'Cormorant Garamond', serif;
+		}
+
+
+
+
+
+
+		.carousel {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			page-break-before: always;
+		}
+
+
+		.body-intro {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			page-break-before: always;
+		}
+
+		.room {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			page-break-before: always;
+			background-color: #faf9f5;
+		}
+
+		.service {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			page-break-before: always;
+		}
+
+		.news {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			page-break-before: always;
+		}
+
+		.news img {
+			width: 30%;
+		}
+
+
+		.room-heading {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding-bottom: 20px;
+		}
+
+		.service-heading {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding-bottom: 20px;
+		}
+
+		.news-heading {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding-bottom: 20px;
+		}
+
+
+
+
+
+
+		.card-title{
+			height: 8vh;
+		}
+
+		.card img {
+			height: 20vh;
+		}
+
+
+		.media img{
+			height: 36vh;
+			width: 50%;
+		}
+
+		.mt-0 {
+			text-transform: uppercase;
+		}
+
+		.media-body{
+			width: auto;
+		}
+
+		.media{
+			border: 1px solid #C68E17;
+			text-align: left;
+		}
+
+
+
+		.price {
+			padding-top:  0px;
+			padding-bottom: 6px;
+			color: #C68E17;
+			font-weight: bold;
+
+		}
+
+
+
+		footer {
+			background-color: black;
+			color: white;
+		}
+
+		footer a {
+			color: white;
+		}
+
+		footer ul {
+			list-style: none;
+		}
+
+		.fa {
+			color: #C68E17;
+		}
+
+		.footer-title{
+			font-family: 'Cormorant Garamond', serif;
+			font-style: italic;
+			font-weight: bold;
+			text-align: center;
+			justify-content: center;
+		}
+		.footer-links{
+			font-size: 12px;
+			font-family: "Roboto", sans-serif;
+			text-align: left;
+			justify-content: left;
+		}
+
+		.social-icon{
+			text-align: center;
+			justify-content: center;
+		}
+
+		.social-icon i {
+			color: white;
+		}
+
+
+		.email input {
+			margin-left: 0px;
+			background-color: gray;
+		}
+
+		.email input::placeholder{
+			font-size: 12px;
+			color: white;
+			padding-left: 10px;
+		}
+
+		.submit-button {
+			width: 12vh;
+			margin-left: 0px;
+			margin-right: 90px;
+			color: black;
+			background-color: #C68E17;
+		}
+
+		.copyright {
+			color: gray;
+		}
+
+		.footer-brand {
+			font-size: 50px;
+		}
+
+
+		@media (min-width: 576px){
+			.navbar-brand img {
+				width: 80px;
+			}
+
+			.navbar button {
+				margin-right: 0;
+			}
+
+			.carousel,
+			.body-intro,
+			.room, 
+			.service,
+			.news {
+				flex-direction: column;
+				height: auto; 
+			}
+
+			.media {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.media img {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			footer .row {
+				text-align: center;
+			}
+
+			footer input {
+				margin: auto;
+			}
+
+			.news-articles {
+				flex-direction: column;
+			}
+
+			article {
+				margin-bottom: 20px;
+			}
+
+			article h2 {
+				font-size: 18px;
+			}
+
+			article p {
+				font-size: 14px;
+			}
+
+			article img {
+				width: 100%;
+				height: auto;
+			}
+
+
+		}
+
+
+		#scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #00bcd4; /* Cyan background color */
+            color: #fff;
+            border: none;
+            border-radius: 50%; /* Make it round */
+            padding: 10px; /* Adjust padding to fit the content */
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5vh;
+        }
+
+        /* Style for the arrow icon */
+        #scrollToTopBtn::before {
+            content: '↑';
+            font-size: 20px;
+        }
+
+
+
+
+
+
+
+
+/* Style the news articles container */
+.news-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style individual articles */
+article {
+    box-sizing: border-box;
+    width: 35vh; /* Adjust the width as per your preference */
+    height: 25vh;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style article headings */
+article h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style article images */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style article paragraphs */
+article p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Style "Read more" links */
+article a {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover effect for "Read more" links */
+article a:hover {
+    text-decoration: underline;
+}
+
+		.news-articles ul {
+			list-style: none;
+
+		}
+
+		.news-articles li {
+			display: inline-flex;
+		}
+
+
+
+	</style>
+
+
+	
+</head>
+<body>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img src="inc/mona-lux.png" class="img-fluid" style="width: 30%;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#"><b>TRANG CHỦ</b> <span class="sr-only">(current)</span></a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<b>LOẠI PHÒNG</b>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<h6 class="dropdown-header">LOẠI PHÒNG</h6>
+						<a class="dropdown-item" href="#">OPTION 1</a>
+						<a class="dropdown-item" href="#">OPTION 2</a>
+						<div class="dropdown-divider"></div>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">OPTION 1</a>
+							<a class="dropdown-item" href="#">OPTION 2</a>
+							<div class="dropdown-divider"></div>
+							
+
+
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#"><b>TIN TỨC</b></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><b>GIỚI THIỆU</b></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><b>LIÊN HỆ</b></a>
+				</li>
+
+
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<div class="input-group mb-3 search-group">
+					<input type="text" class="form-control" placeholder="Tìm kiếm...">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>
+
+
+	<br>
+
+
+	<!-- slider -->
+	<div id="carouselControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="inc/1.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="inc/slide-2-1.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+
+	<!-- intro -->
+	<div class="body-intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="p-intro">
+						<h1>KHÁCH SẠN TUYỆT VỜI Ở TRUNG TÂM THÀNH PHỐ</h1>
+						Khách sạn MONA là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi được xem như trái tim và trung tâm của TP. Hồ Chí Minh. Quý khách chỉ mất 35 phút lái xe từ khách sạn tới sân bay Tân Sơn Nhất, 8 phút để tới khu trung tâm thương mại và giải trí của thành phố. Với 333 phòng tiêu chuẩn và phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác.
+					</p>
+
+					<a href="" class="a-intro">Xem dịch vụ của chúng tôi</a>
+				</div>
+
+			</div>
+			<br>
+			<br>
+			<div class="row images">
+				<div class="col-md-3">
+					<img src="inc/4-4-1.jpg" class="img-fluid">
+				</div>
+
+				<div class="col-md-3">
+					<img src="inc/3-6.jpg" class="img-fluid">
+				</div>
+
+				<div class="col-md-3">
+					<img src="inc/2-5.jpg" class="img-fluid">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<br>
+	<br>
+
+
+	<!-- room -->
+
+	<div class="room">
+		<div class="container">
+			<h1 class="room-heading">LOẠI PHÒNG</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="media">
+						<img src="inc/double-room-suite.jpg" class="mr-3 img-fluid" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0">luxury double room suite</h5>
+							<p class="price">850,000 ₫</p>
+							Luxury Double Room Suite với diện tích 42 m², là phòng khách sạn thiết kế theo phong cách hiện đại, tích hợp đầy đủ tiện nghi bao gồm tivi, wifi tốc độ cao, bồn tắm riêng... Luxury Double Room Suite là lựa chọn lý tưởng dành cho các cặp đôi hay du khách đi công tác.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="media">
+						<img src="inc/attic-floor.jpg" class="mr-3 img-fluid" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0">luxury double suite, attic floor</h5>
+							<p class="price">1,500,000 ₫</p>
+							Luxury Double Room Suite với diện tích 42 m², là phòng khách sạn thiết kế theo phong cách hiện đại, tích hợp đầy đủ tiện nghi bao gồm tivi, wifi tốc độ cao, bồn tắm riêng... Luxury Double Room Suite là lựa chọn lý tưởng dành cho các cặp đôi hay du khách đi công tác.
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="media">
+						<img src="inc/family-room.jpg" class="mr-3 img-fluid" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0">LUXURY FAMILY DOUBLE ROOM SUITE</h5>
+							<p class="price">2,000,000 ₫</p>
+							Luxury Family Double Room Suite với diện tích 84 m², là phòng khách sạn thiết kế theo phong cách hiện đại, tích hợp đầy đủ tiện nghi bao gồm tivi, wifi tốc độ cao, bồn tắm riêng...Với diện tích lớn,Luxury Family Double Room Suite là lựa chọn lý tưởng dành cho các gia đình tận hưởng kì nghỉ dưỡng.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="media">
+						<img src="inc/single-room.jpg" class="mr-3 img-fluid" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0">Luxury Single Room Suite</h5>
+							<p class="price">1,500,000 ₫</p>
+							Với diện tích 32 m²,Luxury Single Room Suite là phòng khách sạn thiết kế hiện đại, tích hợp đầy đủ tiện nghi bao gồm TV, wifi tốc độ cao, phòng tắm riêng... Với diện tích nhỏ và thoáng mát cùng mới chiếc giường size vừa, Luxury Signle Room Suite là lựa chọn lý tưởng dành cho du khách đi công tác hay đi du lịch một mình.
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<br>
+	<br>
+
+	<!-- service -->
+	<div class="service">
+		<div class="container">
+			<h1 class="service-heading">DỊCH VỤ</h1>
+			<div class="row">
+				<div class="col-md-3">
+					<figure>
+						<img src="inc/spa.jpg" class="img-fluid">
+						<figcaption>SPA SALON</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-3">
+					<figure>
+						<img src="inc/pool.jpg" class="img-fluid">
+						<figcaption>HỒ BƠI</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-3">
+					<figure>
+						<img src="inc/restaurant.jpg" class="img-fluid">
+						<figcaption>NHÀ HÀNG</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-3">
+					<figure>
+						<img src="inc/play.jpg" class="img-fluid">
+						<figcaption>VUI CHƠI</figcaption>
+					</figure>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<!-- news -->
+	<div class="news">
+		<div class="container">
+			<h1 class="news-heading">TIN TỨC</h1>
+
+			<div class="news-articles">
+
+				<ul>
+					<li>
+						<article>
+							<h2>Du lịch Vũng Tàu: Cẩm nang từ A đến Z</h2>
+							<img src="inc/cu-lao-cham.jpg">
+							<p>Tổng quan du lịch Vũng Tàu Cách trung tâm thành phó Hồ Chí Minh chỉ khoảng[...]</p>
+							<a href="#">Read more</a>  
+						</article>
+					</li>
+
+					<li>
+						<article>
+							<h2>Du lịch Đà Nẵng: 10 điểm du lịch tham quan hấp dẫn nhất</h2> 
+							<img src="inc/food-.jpg">
+							<p>1.Vinpearl Land toạ lạc trên đảo Hòn Tre với những bãi biển trong xanh[...]</p>
+							<a href="#">Read more</a>
+						</article>
+					</li>
+
+					<li>
+						<article>
+							<h2>Du lịch Phú Quốc: Cẩm nang từ A đến Z</h2>
+							<img src="inc/lang-hoa.jpg"> 
+							<p>Tổng quan du lịch Phú Quốc Phú Quốc là quần đảo xinh đẹp nằm sâu trong[...]</p>
+							<a href="#">Read more</a>  
+						</article>
+					</li>
+				</ul>
+
+
+				
+
+				
+
+				
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+<br>
+<br>
+<br>
+
+
+
+
+<footer>
+
+	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-title">THÔNG TIN</div>
+				<div class="footer-links">
+					<ul>
+						<li><i class="fa fa-map-marker"></i>&nbsp;319 C16 Lý Thường Kiệt, Q.11, HCM</li>
+						<li><a href="tel:+84769220162"><i class="fa fa-phone"></i>&nbsp;076 922 0162</a></li>
+						<li><a href="mailto:demonhunter@gmail.com"><i class="fa fa-envelope"></i>&nbsp;demonhunter@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 about-us">
+				<div class="footer-title">VỀ CHÚNG TÔI</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="">Giới thiệu</a></li>
+						<li><a href="">Dịch vụ</a></li>
+						<li><a href="">Loại phòng</a></li>
+						<li><a href="">Liên hệ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 social-media">
+				<div class="footer-title">MẠNG XÃ HỘI</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">Youtube</a></li>
+						<li><a href="">Pinterest</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-12 email">
+						<input type="email" placeholder="Email của bạn" id="email">
+					</div>
+					<div class="col-md-12" style="margin-top:20px;">
+						<input type="submit" value="Đăng ký" class="submit-button">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="social-icon">
+		<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.google.com"><i class="fa fa-google-plus"></i></a>
+		<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 footer-brand">MONA LUX</div>
+			<div class="col-md-12 copyright">&copy; All right reserved. Thiết kế website <span><i class="fa fa-github-alt" style="color: white;"></i>&nbsp;Mona Media</span></div>
+		</div>
+	</div>
+</footer>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()"></button>
+
+<script>
+        // Get the button element
+	var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+	window.onscroll = function() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			scrollToTopBtn.style.display = "block";
+		} else {
+			scrollToTopBtn.style.display = "none";
+		}
+	};
+
+        // Function to smoothly scroll to the top of the page
+	function scrollToTop() {
+		var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+		if (currentScroll > 0) {
+			window.requestAnimationFrame(scrollToTop);
+			window.scrollTo(0, currentScroll - currentScroll / 35);
+		}
+	}
+</script>
+
+
+
+
+</html>
